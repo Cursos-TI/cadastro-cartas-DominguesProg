@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int main() {
     /* !!!DESAFIO AVENTUREIRO!!!
     Agora foi adicionado PIB per Capta e Densidade Populacional.
