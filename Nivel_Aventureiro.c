@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-
 int main() {
-    /* !!!DESAFIO AVENTUREIRO!!!
-    Agora foi adicionado PIB per Capta e Densidade Populacional.
-    */
+
+    /*Nivel aventureiro. 
+    Agora adicionado Densidade populacional e PIB per Capta*/
+
 
     // Variáveis da carta 1
     char estado;
@@ -14,8 +14,8 @@ int main() {
     float area;
     float pib;
     int ponto;
-    float densidade; // Determinará a Densidade Populacional
-    float percapta; // Determinará o PIB per Capta
+    float densidade; //Variavel densidade populacional
+    float percapta; //Variavel PIB per Capta
 
     // Variáveis da carta 2
     char estado2;
@@ -28,7 +28,7 @@ int main() {
     float densidade2;
     float percapta2;
 
-    printf("Olá, seja bem-vindo ao jogo Super Trunfo! Aventureiro\n\n");
+    printf("Olá, seja bem-vindo ao jogo Super Trunfo!\n\n");
 
     // Carta 1
     printf(" Carta 1 \n");
@@ -77,9 +77,11 @@ int main() {
     printf("Quantos pontos turísticos tem essa cidade?: ");
     scanf("%d", &ponto2);
 
+    //variavel densidade e PIB per Capta CARTA1
     densidade = populacao / area;
     percapta = populacao / pib;
 
+    //variavel densidade e PIB per Capta CARTA2
     densidade2 = populacao2 / area2;
     percapta2 = populacao2 / pib2;
 
@@ -94,8 +96,8 @@ int main() {
     printf("Área: %.2f km²\n", area);
     printf("PIB: R$ %.2f bilhões\n", pib);
     printf("Número de pontos turísticos: %d\n", ponto);
-    printf("A Densidade populacional é: %.2f\n", densidade);
-    printf("O PIB per Capta é: %.2f\n", percapta);
+    printf("A Densidade populacional é: %.2f hab/Km²\n", densidade);
+    printf("O PIB per Capta é: R$ %.2f\n", percapta);
 
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estado2);
@@ -105,8 +107,9 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: R$ %.2f bilhões\n", pib2);
     printf("Número de pontos turísticos: %d\n", ponto2);
-    printf("A Densidade populacional é: %.2f\n", densidade2);
-    printf("O PIB per Capta é: %.2f\n", percapta2);
+    printf("A Densidade populacional é: %.2f hab/Km²\n", densidade2);
+    printf("O PIB per Capta é: R$ %.2f\n", percapta2);
 
     return 0;
 }
+
